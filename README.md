@@ -1,18 +1,18 @@
 # FFS
 This is an application that made for "Food Finder Specialist"
-
+<b> GUIDE TO INSTALL </b>
 Put the www file inside:
 platforms -> android -> app -> src -> main -> assets
 
-Needed plugin to install before able to use the program:
+<b> Needed plugin to install before able to use the program: </b>
 FOR NOW NONE
 
-Bug:
+<b> Bug: </b>
 Still identifying
 
-Known-bug:
+<b> Known-bug: </b>
 Still identifying
 
-Planned plugin:
+<b> Planned plugin: </b>
 cordova-plugin-geolocation
 cordova-plugin-camera
