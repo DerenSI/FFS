@@ -1,5 +1,6 @@
 # FFS
 This is an application that made for "Food Finder Specialist"
+<br />
 <b> GUIDE TO INSTALL </b>
 Put the www file inside:
 platforms -> android -> app -> src -> main -> assets
