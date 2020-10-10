@@ -4,8 +4,8 @@ This is an application that made for "Food Finder Specialist"
 <br />
 <b> GUIDE TO INSTALL </b>
 <br />
-Put the www file inside:
-<b> platforms -> android -> app -> src -> main -> assets </b>
+Put the www file as replacement of:
+<b> project name -> www </b>
 
 <b> Needed plugin to install before able to use the program: </b>
 FOR NOW NONE
