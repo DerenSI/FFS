@@ -19,7 +19,10 @@ Still identifying
 <b> Planned plugin: </b>
 cordova-plugin-geolocation
 cordova-plugin-camera
+
 <b> ================================================================ </b>
+<br />
+
 <b> Version v 0.0.2 </b>
 <br />
 <b> What new? </b>
