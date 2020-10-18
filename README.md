@@ -5,7 +5,7 @@ This is an application that made for "Food Finder Specialist"
 <b> GUIDE TO INSTALL </b>
 <br />
 Put the www file inside:
-<b> platforms -> android -> app -> src -> main -> assets </b>
+<b> PROJECT_NAME -> www </b>
 
 <b> Needed plugin to install before able to use the program: </b>
 FOR NOW NONE
