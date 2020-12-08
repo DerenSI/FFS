@@ -34,7 +34,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="../../css/bootstrap.css">
-    <title>FFS (Food Finder Specialist) - Add Food</title>
+    <title>FFS (Food Finder Specialist) - Home</title>
 </head>
 <body>
 <!--  START HEADER  -->
@@ -47,10 +47,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="ownerdash.html">HOME</a>
+                    <a class="nav-link text-light" href="ownerdash.html">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="addfood.html">ADD NEW FOOD <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="addfood.html">ADD NEW FOOD</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="edrest.html">EDIT RESTAURANT INFORMATION</a>
@@ -70,32 +70,31 @@
 </div>
 <!--    END HEADER    -->
 <!--   START CONTENT     -->
-<div class="container" style="margin-top: 70pt;">
-    <form method="POST" action="#">
-        <div class="form-group">
-            <input type="text" class="form-control" id="food_name" placeholder="Food Name">
+<div class="container" style="margin-top: 41pt;">
+    <div class="card">
+        <img src="https://previews.123rf.com/images/bhofack2/bhofack21410/bhofack2141000584/32917700-hot-homemade-pepperoni-pizza-ready-to-eat.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Price</p>
         </div>
-        <div class="form-group">
-            <select class="form-control" id="category_id">
-                <option value="0">Category</option>
-                <option value="1">Nasi</option>
-                <option value="2">Ayam</option>
-            </select>
+        <div class="card-body">
+            <a href="editfood.html" class="card-link">EDIT</a>
+            <a href="#" class="card-link">REMOVE</a>
         </div>
-        <div class="form-group">
-            <textarea class="form-control" id="food_description"></textarea>
+    </div>
+    <div class="card">
+        <img src="https://previews.123rf.com/images/bhofack2/bhofack21410/bhofack2141000584/32917700-hot-homemade-pepperoni-pizza-ready-to-eat.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Price</p>
         </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="food_price" placeholder="Food Price">
+        <div class="card-body">
+            <a href="editfood.html" class="card-link">EDIT</a>
+            <a href="#" class="card-link">REMOVE</a>
         </div>
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="food_picture">Upload Food Picture</label>
-            <input type="file" class="custom-file-input" id="food_picture">
-        </div>
-        <div class="form-group mb-3">
-            <a href="../vendor/ownerdash.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">ADD NEW FOOD</a>
-        </div>
-    </form>
+    </div>
 </div>
 <!--   END CONTENT     -->
 <!--   START FOOTER     -->

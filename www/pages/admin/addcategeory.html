@@ -34,7 +34,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="../../css/bootstrap.css">
-    <title>FFS (Food Finder Specialist) - Add Food</title>
+    <title>FFS (Food Finder Specialist) - Add Category</title>
 </head>
 <body>
 <!--  START HEADER  -->
@@ -47,19 +47,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="ownerdash.html">HOME</a>
+                    <a class="nav-link text-light" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="addfood.html">ADD NEW FOOD <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#">OWNER LIST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="edrest.html">EDIT RESTAURANT INFORMATION</a>
+                    <a class="nav-link text-light" href="#">CUSTOMER LIST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="edrest.html">EDIT ACCOUNT INFORMATION</a>
+                    <a class="nav-link text-light" href="#">CATEGORY LIST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">ABOUT US</a>
+                    <a class="nav-link text-light" href="#">EDIT ACCOUNT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">LOGOUT</a>
@@ -73,27 +73,14 @@
 <div class="container" style="margin-top: 70pt;">
     <form method="POST" action="#">
         <div class="form-group">
-            <input type="text" class="form-control" id="food_name" placeholder="Food Name">
+            <label>Category</label>
         </div>
         <div class="form-group">
-            <select class="form-control" id="category_id">
-                <option value="0">Category</option>
-                <option value="1">Nasi</option>
-                <option value="2">Ayam</option>
-            </select>
+            <input type="text" class="form-control" id="category_name" placeholder="Category Name">
         </div>
-        <div class="form-group">
-            <textarea class="form-control" id="food_description"></textarea>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="food_price" placeholder="Food Price">
-        </div>
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="food_picture">Upload Food Picture</label>
-            <input type="file" class="custom-file-input" id="food_picture">
-        </div>
+
         <div class="form-group mb-3">
-            <a href="../vendor/ownerdash.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">ADD NEW FOOD</a>
+            <button href="../admin/admindash.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">ADD CATEGORY</button>
         </div>
     </form>
 </div>

@@ -47,90 +47,45 @@
 <!--    END HEADER    -->
 <!--   START CONTENT     -->
 <div class="container" style="margin-top: 70pt;">
-    <form>
+    <form method="POST" action="#">
         <div class="form-group">
-            <label>Restaurant Detail</label>
+            <label>Account Detail</label>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="rn" placeholder="Restaurant Name">
+            <input type="text" class="form-control" id="owner_name" placeholder="Owner Name">
         </div>
         <div class="form-group">
-            <select class="form-control" id="location">
-                <option>Select Location</option>
-                <option>Batam</option>
+            <input type="text" class="form-control" id="owner_phone" placeholder="Owner Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="owner_email" placeholder="Owner Email">
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="owner_gender">
+                <option value="0">GENDER</option>
+                <option value="1">MALE</option>
+                <option value="2">FEMALE</option>
             </select>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="pn" placeholder="Restaurant Phone Number">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="bln" placeholder="Business License Number">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" id="address" placeholder="Full Address" rows="3"></textarea>
-        </div>
-        <hr />
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="tl">Upload Tax License</label>
-            <input type="file" class="custom-file-input" id="tl">
+            <input type="text" class="form-control" id="owner_id_no" placeholder="Owner ID Number">
         </div>
         <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="bl">Upload Business License</label>
-            <input type="file" class="custom-file-input" id="bl">
-        </div>
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="doi">Upload Deed of Incorporation</label>
-            <input type="file" class="custom-file-input" id="doi">
-        </div>
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="rvf">Upload Restaurant (Front View)</label>
-            <input type="file" class="custom-file-input" id="rvf">
-        </div>
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="rvs">Upload Restaurant (Side View)</label>
-            <input type="file" class="custom-file-input" id="rvs">
-        </div>
-        <div class="form-group custom-file">
-            <label class="custom-file-label" for="rvb">Upload Restaurant (Banner)</label>
-            <input type="file" class="custom-file-input" id="rvb">
+            <label class="custom-file-label" for="tl">Upload ID</label>
+            <input type="file" class="custom-file-input" id="owner_id_no_file">
         </div>
         <hr />
         <div class="form-group">
-            <label>Responsible Person Detail & Restaurant Password</label>
-        </div>
-        <div class="form-group form-row">
-            <div class="col">
-                <input type="text" class="form-control" id="rfn" placeholder="First Name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" id="rln" placeholder="Last Name">
-            </div>
+            <input type="text" class="form-control" id="owner_username" placeholder="Username" readonly="">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="rpn" placeholder="Responsible Person's Phone Number">
+            <input type="password" class="form-control" id="password" placeholder="Password">
         </div>
         <div class="form-group">
-            <input type="email" class="form-control" id="rea" placeholder="Responsible Person's Email Address">
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" id="rin" placeholder="Responsible Person's ID Number">
-        </div>
-        <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="ric">Upload Identity Card</label>
-            <input type="file" class="custom-file-input" id="ric">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="pwd" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="repwd" placeholder="Confirm Password">
-        </div>
-        <div class="form-group custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="term">
-            <label class="custom-control-label" for="term">I've read and agree to all of FFS' term and policy</label>
+            <input type="password" class="form-control" id="repassword" placeholder="Confirm Password">
         </div>
         <div class="form-group mb-3">
-            <a href="../vendor/vendash.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">REGISTER</a>
+            <a href="regrest.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">NEXT</a>
         </div>
     </form>
 </div>

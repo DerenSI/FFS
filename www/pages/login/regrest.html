@@ -34,38 +34,14 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="../../css/bootstrap.css">
-    <title>FFS (Food Finder Specialist) - Add Food</title>
+    <title>FFS (Food Finder Specialist) - Register User</title>
 </head>
 <body>
 <!--  START HEADER  -->
 <div id="container">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #f56819;">
-        <a class="navbar-brand text-light" href="vendash.html">FFS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link text-light" href="ownerdash.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="addfood.html">ADD NEW FOOD <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="edrest.html">EDIT RESTAURANT INFORMATION</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="edrest.html">EDIT ACCOUNT INFORMATION</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">LOGOUT</a>
-                </li>
-            </ul>
-        </div>
+        <a class="navbar-brand text-light" href="../../index.html">FFS</a>
+        <a href="registerhome.html" style="background-color: #e06110; color: white; border-color: #e06110" class="btn btn-outline-success my-2 my-sm-0">Return</a>
     </nav>
 </div>
 <!--    END HEADER    -->
@@ -73,27 +49,39 @@
 <div class="container" style="margin-top: 70pt;">
     <form method="POST" action="#">
         <div class="form-group">
-            <input type="text" class="form-control" id="food_name" placeholder="Food Name">
+            <label>Restaurant Detail</label>
         </div>
         <div class="form-group">
-            <select class="form-control" id="category_id">
-                <option value="0">Category</option>
-                <option value="1">Nasi</option>
-                <option value="2">Ayam</option>
-            </select>
+            <input type="text" class="form-control" id="restaurant_name" placeholder="Restaurant Name">
         </div>
         <div class="form-group">
-            <textarea class="form-control" id="food_description"></textarea>
+            <textarea class="form-control" id="restaurant_location" placeholder="Restaurant Location"></textarea>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="food_price" placeholder="Food Price">
+            <input type="text" class="form-control" id="restaurant_lat" placeholder="Restaurant Location (Latitude)">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="restaurant_long" placeholder="Restaurant Location (Longitude)">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="restaurant_phone" placeholder="Restaurant Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="restaurant_email" placeholder="Restaurant Email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="tax_no" placeholder="Restaurant Tax License Number">
         </div>
         <div class="form-group custom-file mb-3">
-            <label class="custom-file-label" for="food_picture">Upload Food Picture</label>
-            <input type="file" class="custom-file-input" id="food_picture">
+            <label class="custom-file-label" for="tl">Upload Tax License</label>
+            <input type="file" class="custom-file-input" id="tax_no_file">
+        </div>
+        <div class="form-group custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="term">
+            <label class="custom-control-label" for="term">I've read and agree to all of FFS' term and policy</label>
         </div>
         <div class="form-group mb-3">
-            <a href="../vendor/ownerdash.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">ADD NEW FOOD</a>
+            <a href="../vendor/vendash.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">REGISTER</a>
         </div>
     </form>
 </div>

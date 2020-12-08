@@ -34,7 +34,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="../../css/bootstrap.css">
-    <title>FFS (Food Finder Specialist) - Register User</title>
+    <title>FFS (Food Finder Specialist) - Edit User</title>
 </head>
 <body>
 <!--  START HEADER  -->
@@ -47,10 +47,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="usdas.html">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="usdas.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="edusdet.html">EDIT INFORMATION</a>
+                    <a class="nav-link text-light" href="edusdet.html">EDIT INFORMATION <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">ABOUT US</a>
@@ -65,36 +65,32 @@
 <!--    END HEADER    -->
 <!--   START CONTENT     -->
 <div class="container" style="margin-top: 70pt;">
-    <form>
+    <form method="POST" action="#">
+        <input type="hidden" class="form-control" id="customer_id" placeholder="Customer ID" readonly>
         <div class="form-group">
-            <input type="email" class="form-control" id="ea" placeholder="Email Address">
+            <input type="text" class="form-control" id="customer_name" placeholder="Name">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="usn" placeholder="Username">
-        </div>
-        <div class="form-group form-row">
-            <div class="col">
-                <input type="text" class="form-control" id="fn" placeholder="First Name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" id="ln" placeholder="Last Name">
-            </div>
+            <input type="text" class="form-control" id="customer_phone" placeholder="Phone">
         </div>
         <div class="form-group">
-            <select class="form-control" id="gender">
-                <option>Select Gender</option>
-                <option>Male</option>
-                <option>Female</option>
+            <input type="email" class="form-control" id="customer_email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="customer_gender">
+                <option value="0">GENDER</option>
+                <option value="1">MALE</option>
+                <option value="2">FEMALE</option>
             </select>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="pn" placeholder="Phone Number">
+            <input type="text" class="form-control" id="username" placeholder="Username" readonly>
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" id="pwd" placeholder="Password">
+            <input type="password" class="form-control" id="password" placeholder="Password">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" id="repwd" placeholder="Confirm Password">
+            <input type="password" class="form-control" id="repassword" placeholder="Confirm Password">
         </div>
         <div class="form-group mb-3">
             <a href="../user/usdas.html" style="background-color: #ff6300; border-color: #ff6300; color: white" class="btn btn-block">EDIT INFORMATION</a>
