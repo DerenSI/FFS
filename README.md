@@ -11,14 +11,15 @@ Put the www file inside:
 FOR NOW NONE
 
 <b> Bug: </b>
-Still identifying
+NO API WORKING YET
 
 <b> Known-bug: </b>
-Still identifying
+NO PAGE TRANSFER, MUST MANUALLY ENTER IT BY DROPPING IT TO THE BROWSER
 
 <b> Planned plugin: </b>
-cordova-plugin-geolocation
-cordova-plugin-camera
+cordova-broadcaster
+cordova-plugin-background-fetch
+cordova-plugin-local-notifications
 
 <b> ================================================================ </b>
 <br />
